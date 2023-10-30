@@ -12,7 +12,6 @@ public class CheckOut_Page extends Page_Object {
     public WebElement itemsButton;
     @FindBy(xpath= "//*[@id=\"top-links\"]/ul/li[5]/a/i")
     public WebElement checkoutButton;
-
     @FindBy(id = "input-payment-firstname")
     private WebElement firstNameBox;
     @FindBy(id = "input-payment-lastname")
@@ -58,10 +57,8 @@ public class CheckOut_Page extends Page_Object {
         countryBox.sendKeys(Config_Reader.getProperties("Country"));
         regionBox.sendKeys(Config_Reader.getProperties("Region"));
 
-
         continueButton.click();
     }
-
     public void paymentMethodPart(){
         textArea.sendKeys(Config_Reader.getProperties("Payment Method"));
         continueButton2.click();

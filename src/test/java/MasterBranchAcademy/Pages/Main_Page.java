@@ -8,17 +8,13 @@ public class Main_Page {
 
     @FindBy (className = ".form-control.input-lg")
     private  WebElement searchBox;
-
     @FindBy (className = ".btn.btn-default.btn-lg")
     private WebElement searchButton;
 
-    /////methods/////
+ //methods//
     public void aramaYapmaIslemi(){
 
       searchBox.sendKeys(Config_Reader.getProperties("urun"));
       searchButton.click();
     }
-
-
-
 }

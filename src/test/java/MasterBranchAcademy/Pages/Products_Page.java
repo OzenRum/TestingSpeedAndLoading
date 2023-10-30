@@ -10,10 +10,8 @@ public class Products_Page extends Page_Object {
     public WebElement listViewOptionBox;
     @FindBy(xpath = "//button[@onclick='cart.add('43', '1');']")
     public WebElement addToCart;
-
     @FindBy(id = "cart-total")
     public WebElement itemsButton;
-
     @FindBy (xpath = "//*[@id='cart']/ul/li[1]/table/tbody/tr/td[2]/a")
     public WebElement itemsDetails;
 

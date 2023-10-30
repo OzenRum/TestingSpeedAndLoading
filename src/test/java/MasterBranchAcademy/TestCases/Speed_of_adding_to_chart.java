@@ -1,4 +1,4 @@
-package MasterBranchAcademy.TestCase_3;
+package MasterBranchAcademy.TestCases;
 
 import MasterBranchAcademy.Pages.Main_Page;
 import MasterBranchAcademy.Pages.Login_Page;
@@ -31,9 +31,5 @@ public class Speed_of_adding_to_chart extends Base_Test {
         productsPage.items();
         String dynamicUrunIsmi = Config_Reader.getProperties("urun");
         Assert.assertTrue(productsPage.itemsDetails.getText().contains(dynamicUrunIsmi));
-
-
     }
-
-
 }

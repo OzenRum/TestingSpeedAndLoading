@@ -8,20 +8,14 @@ public class Login_Page extends Page_Object{
 
     @FindBy (id = "input-email")
     private WebElement mailadress;
-
     @FindBy (id = "input-password")
     private WebElement password;
-
-  @FindBy (xpath = "//input[@class='btn btn-primary']")
+    @FindBy (xpath = "//input[@class='btn btn-primary']")
     private WebElement loginButton;
-
-  @FindBy (xpath = "(//h2)[1]")
+    @FindBy (xpath = "(//h2)[1]")
   public WebElement myaccountheader;
 
-
-
-  //methods//**********************
-
+    //methods//
     public void login_islemi() throws InterruptedException {
         mailadress.sendKeys(Config_Reader.getProperties("mail"));
         password.sendKeys(Config_Reader.getProperties("password"));
@@ -29,9 +23,4 @@ public class Login_Page extends Page_Object{
         Thread.sleep(1000);
 
     }
-
-
-
-
-
 }

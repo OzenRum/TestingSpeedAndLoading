@@ -1,4 +1,4 @@
-package MasterBranchAcademy.TestCase_1;
+package MasterBranchAcademy.TestCases;
 
 import MasterBranchAcademy.Pages.Login_Page;
 import MasterBranchAcademy.Utilities.Base_Test;
@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 public class Speed_of_loading_of_main_page extends Base_Test {
     Login_Page loginPage = new Login_Page();
-
     @Test
     public void loginPageTest() throws InterruptedException {
 

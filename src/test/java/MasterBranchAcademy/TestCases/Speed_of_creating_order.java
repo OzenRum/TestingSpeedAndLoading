@@ -1,4 +1,4 @@
-package MasterBranchAcademy.TestCase_4;
+package MasterBranchAcademy.TestCases;
 
 import MasterBranchAcademy.Pages.CheckOut_Page;
 import MasterBranchAcademy.Utilities.Base_Test;
@@ -13,6 +13,10 @@ public class Speed_of_creating_order extends Base_Test {
         checkOutPage.goToCheckOut();
         extentLogger.info("User fills the boxes");
         checkOutPage.fillingBillDetails();
+
+        //In this step we got BUG. User can not go to next step.
+        // There is a Bug ticket for more infotmation (https://trello.com/c/dFBBBajx)
+
     }
 
 

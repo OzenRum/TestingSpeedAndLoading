@@ -1,4 +1,4 @@
-package MasterBranchAcademy.TestCase_2;
+package MasterBranchAcademy.TestCases;
 
 import MasterBranchAcademy.Pages.Main_Page;
 import MasterBranchAcademy.Utilities.Base_Test;
@@ -11,6 +11,5 @@ public class Speed_of_searching extends Base_Test {
     public void searchspeedTest (){
         extentLogger.info("User makes search from search box");
         anasayfa.aramaYapmaIslemi();
-
     }
 }
